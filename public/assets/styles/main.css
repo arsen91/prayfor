@@ -1,0 +1,10 @@
+@import url("/styles/header.css");
+
+@font-face {
+    font-family: "MyFont";
+    src: url("/fonts/10171.otf") format("truetype")
+}
+
+* {
+    font-family: "MyFont", sans-serif;
+}

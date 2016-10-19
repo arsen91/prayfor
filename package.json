@@ -1,0 +1,17 @@
+{
+  "name": "molitva-za",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Arseni Prokharchyk",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.4",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "tether": "^1.3.7"
+  }
+}
