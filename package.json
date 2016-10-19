@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "less": "lessc public/assets/less/main.less public/assets/styles/main.css",
-    "start": "node index.js"
+    "devstart": "npm run less && nodemon index.js",
+    "start": "npm run less && node index.js"
   },
   "author": "Arseni Prokharchyk",
   "license": "ISC",
