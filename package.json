@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "less": "lessc public/assets/less/main.less public/assets/styles/main.css",
+    "less": "lessc public/assets/less/app.less public/assets/styles/main.css",
     "devstart": "npm run less && nodemon index.js",
     "start": "npm run less && node index.js"
   },

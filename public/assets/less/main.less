@@ -1,10 +1,53 @@
-@import "header.less";
-
-@font-face {
-    font-family: "MyFont";
-    src: url("/fonts/10171.otf") format("truetype")
+html{
+	height: 100%;
+	font-size: 10px;
 }
-
-* {
-    font-family: "MyFont", sans-serif;
+body{
+	height: 100%;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	text-align: center;
+}
+#main-content{
+	min-height: 100%;
+	nav{
+		background-color: sandybrown;
+		padding: 30px 5%;
+		display: flex;
+		align-items: center;
+		.nav-btn{
+			display: inline-block;
+			padding: 10px 20px;
+			font: 3rem Kaffe, sans-serif;
+			text-transform: uppercase;
+			background: linear-gradient(red, salmon);
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 4px 0 0 black;
+			color: #fff;
+			cursor: pointer;
+			&:active{
+				background: linear-gradient(salmon, red);
+				box-shadow: 0 2px 0 0 black;
+			}
+		}
+		.location{
+			text-transform: uppercase;
+			font: 10rem Kaffe, sans-serif;
+			color: #fff;
+		}
+		.dates{
+			text-transform: uppercase;
+			font: 10rem Kaffe, sans-serif;
+			color: red;
+		}
+	}
+	.main-content{
+  		padding: 5% 10%;
+		h2{
+			font: bold 12rem Poiret, sans-serif;
+			color: maroon;
+		}
+	}
 }
