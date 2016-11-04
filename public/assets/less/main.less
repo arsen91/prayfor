@@ -15,38 +15,42 @@ body{
 		background-color: #ffc529;
 		padding: 30px 5%;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		.nav-btn{
 			display: inline-block;
-			padding: 10px 20px;
-			font: 3rem Kaffe, sans-serif;
-			text-transform: uppercase;
-			background: linear-gradient(red, salmon);
-			border: none;
-			border-radius: 5px;
-			box-shadow: 0 4px 0 0 black;
+			font: bold 4rem BigNoodle, sans-serif;
 			color: #fff;
+			text-transform: uppercase;
+			border: 3px solid red;
+			border-radius: 4px;
 			cursor: pointer;
-			&:active{
-				background: linear-gradient(salmon, red);
-				box-shadow: 0 2px 0 0 black;
+			width: 400px;
+			&:hover{
+				color: #f00;
 			}
 		}
-		.location{
+		.event-date{
+			display: flex;
+			flex-direction: column;
+			.location{
 			text-transform: uppercase;
-			font: 10rem Kaffe, sans-serif;
-			color: #fff;
+			font: 10rem BigNoodle, sans-serif;
+			letter-spacing: -8px;
+			color: #f00;
+			}
+			.dates{
+				text-transform: uppercase;
+				font: 10rem BigNoodle, sans-serif;
+				color: #fff;
+			}	
 		}
-		.dates{
-			text-transform: uppercase;
-			font: 10rem Kaffe, sans-serif;
-			color: red;
-		}
+		
 	}
 	.main-content{
   		padding: 5% 10%;
 		h2{
-			font: bold 12rem Poiret, sans-serif;
+			font: 12rem Cola, sans-serif;
 			color: #ff6a21;
 		}
 	}
