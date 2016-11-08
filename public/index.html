@@ -8,7 +8,7 @@
     <title>Молитва за Пробуждение и Единство</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
        <h1 class="main-title">
            <p><span>#</span>Молитва за </p>
            <p>Пробуждение</p>
@@ -38,18 +38,48 @@
                 <a class="know-more nav-btn">узнать больше</a>
         </nav>
         <main class="main-content">
-            <h2>
+            <h2 class="main-content-title">
                 <p>Верующие Беларуси будут</p>
                 <p>молиться за Пробуждение</p>
                 <p>и Единство</p>
             </h2>
+            <section class="form-wrapp hide">
+
+                <form>
+                  <div class="form-group">
+                    <label for="inputFIO" >ФИО:</label>
+                    <input type="text" class="form-control" id="inputFIO" placeholder="ФИО">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="church" >Церковь:</label>
+                      <input type="text" class="form-control" id="church" placeholder="Церковь">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputEmail" >Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  </div>
+                  
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">Регистрация</button>
+                  </div>
+                </form>
+
+            </section>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                  Спасибо за регистрацию, ждем Вас 20-21 января 2017 года
+                </div>
+              </div>
+            </div>
         </main>
     </div>
 
-    <body>
-    </body>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/tether/dist/js/tether.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
