@@ -5,6 +5,7 @@ $( document ).ready(function() {
 	});
 	$('.form-wrapp button').click(function() {
 		$('.main-header, .main-content-title').removeClass('hide');
+		$('.form-wrapp input').val('');
 		$('.form-wrapp').addClass('hide');
 	})
    
