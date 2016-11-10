@@ -3,31 +3,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta name="description" content="молитва-за.бел" />
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/main.css">
     <title>Молитва за Пробуждение и Единство</title>
 </head>
-<body>
-    <header class="main-header">
-       <h1 class="main-title">
-        <p><span>#</span>Молитва за </p>
-          <p>Пробуждение</p>
-       </h1>
-       <h3 class="pray-year">2017</h3>
-       <a href="#" class="header-arrow-down"></a>
-    </header>
+<body ng-app="molitva">
+    <div class="main">
+        
 
-    <div id="main-content">
-        <nav>
-          <a class="participate nav-btn">участвовать</a>
-          <div class="event-date">
-            <span class="location">минск</span>
-            <span class="dates">20-21 января</span>
-          </div>
-          <a class="know-more nav-btn">узнать больше</a>
-        </nav>
+        <div ng-view></div>
 
-        <main class="main-content">
+        <!-- <main class="main-content">
             <h2 class="main-content-title">
                 <p>Верующие Беларуси будут</p>
                 <p>молиться за Пробуждение</p>
@@ -64,12 +50,15 @@
                 </div>
               </div>
             </div>
-        </main>
-    </div>
+        </main>-->
+    </div> 
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/tether/dist/js/tether.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/angular-app.js"></script>
 </body>
 </html>

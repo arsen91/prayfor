@@ -16,45 +16,9 @@ body {
 	margin: 0 auto;
 	text-align: center;
 }
-#main-content {
+.main {
 	min-height: 100%;
-	nav {
-		background-color: @yellowColor;
-		padding: 30px 5%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		.nav-btn {
-			display: inline-block;
-			font: bold 4rem BigNoodle, sans-serif;
-			color: #fff;
-			text-transform: uppercase;
-			border: 3px solid @redColor;
-			border-radius: 4px;
-			cursor: pointer;
-			width: 400px;
-			white-space: nowrap;
-			&:hover {
-				color: @redColor;
-			}
-		}
-		.event-date {
-			display: flex;
-			flex-direction: column;
-			.location{
-			text-transform: uppercase;
-			font: 10rem BigNoodle, sans-serif;
-			letter-spacing: -8px;
-			color: @redColor;
-			}
-			.dates {
-				text-transform: uppercase;
-				font: 10rem BigNoodle, sans-serif;
-				color: #fff;
-			}	
-		}
-		
-	}
+
 	.main-content {
   		padding: 5% 10%;
 		h2{
@@ -64,19 +28,58 @@ body {
 				white-space: nowrap;
 			}
 		}
-		.form-wrapp {
-			max-width: 500px;
-			min-width: 400px;
-			width: 100%;
-			margin: 0 auto;
-			text-align: left;
-			font-size: 2.4rem;
-			input {
-				font-size: 2rem;
-			}
-			button {
-				font-size: 2rem;
-			}
+	}
+}
+section {
+	max-width: 500px;
+	min-width: 400px;
+	width: 100%;
+	margin: 50px auto;
+	text-align: left;
+	font-size: 2.4rem;
+	input {
+		font-size: 2rem;
+	}
+	button {
+		font-size: 2rem;
+	}
+}
+
+nav {
+	background-color: @yellowColor;
+	padding: 30px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.nav-btn {
+		display: inline-block;
+		font: bold 4rem BigNoodle, sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		border: 3px solid @redColor;
+		border-radius: 4px;
+		cursor: pointer;
+		width: 400px;
+		white-space: nowrap;
+		&:hover {
+			color: @redColor;
+			text-decoration: none;
 		}
 	}
+	.event-date {
+		display: flex;
+		flex-direction: column;
+		.location{
+		text-transform: uppercase;
+		font: 10rem BigNoodle, sans-serif;
+		letter-spacing: -8px;
+		color: @redColor;
+		}
+		.dates {
+			text-transform: uppercase;
+			font: 10rem BigNoodle, sans-serif;
+			color: #fff;
+		}	
+	}
+	
 }

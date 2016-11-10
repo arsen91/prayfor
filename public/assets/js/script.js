@@ -1,17 +1,8 @@
 $( document ).ready(function() {
-	$('.participate').click(function() {
-		$('.main-header, .main-content-title').addClass('hide');
-		$('.form-wrapp').removeClass('hide');
-	});
-	$('.form-wrapp button').click(function() {
-		$('.main-header, .main-content-title').removeClass('hide');
-		$('.form-wrapp input').val('');
-		$('.form-wrapp').addClass('hide');
-	});
-
-    $('.header-arrow-down').click(function() {
+    $('.header-arrow-down').click(function(event) {
+        event.preventDefault();
         $('html, body').animate({
-            scrollTop: $("#main-content").offset().top
+            scrollTop: $("nav").offset().top
         }, 350);
     });
 });
