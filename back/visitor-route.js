@@ -1,32 +1,32 @@
-let express = require('express');
-let visitorRouter = express.Router();
-let _  = require('lodash');
+var express = require('express');
+var visitorRouter = express.Router();
+var _  = require('lodash');
 
-let Visitor = require('./visitor');
+var Visitor = require('./visitor');
 
 visitorRouter.route('/register')
-    .get((req, res) => {
-        Visitor.find((err, visitors) => {
+    .get(function(req, res) {
+        Visitor.find(function(err, visitors) {
             if (err) {
-                res.json({success: false, err})
+                res.json({success: false, err: err});
             } else {
-                res.json({success: true, visitors});
+                res.json({success: true, visitors: visitors});
             }
         });
     })
-    .post((req, res) => {
-        let name = req.body.name,
+    .post(function(req, res) {
+        var name = req.body.name,
             email = req.body.email || '',
             church = req.body.church,
             visitor = new Visitor({
-                name,
-                email,
-                church
+                name: name,
+                email: email,
+                church: church
             });
 
-        visitor.save((err, vis) => {
+        visitor.save(function(err, vis) {
             if (err) {
-                res.json({ success: false, error: err})
+                res.json({ success: false, error: err});
             } else {
                 res.json({success: true});
             }

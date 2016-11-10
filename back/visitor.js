@@ -1,5 +1,5 @@
-let mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 module.exports = mongoose.model('Visitor', new Schema({ 
     name: { type: String, required: true },
