@@ -31,17 +31,31 @@ body {
 	}
 }
 section {
-	max-width: 500px;
-	min-width: 400px;
+	height: 100%;
+	background: url(/images/geometry2.png);
 	width: 100%;
-	margin: 50px auto;
 	text-align: left;
 	font-size: 2.4rem;
+	.result-alert {
+		font-size: 1.4rem;
+		width: 50%;
+		margin: 10px auto 0 auto;
+	}
 	input {
 		font-size: 2rem;
 	}
 	button {
 		font-size: 2rem;
+	}
+	form {
+		border: 5px solid @customDarkGrey;
+	    padding: 20px;
+	    margin-top: 50px;
+
+	    .error-message {
+	    	color: @redColor;
+	    	font-size: 1.2rem;
+	    }
 	}
 }
 
@@ -67,13 +81,14 @@ nav {
 		}
 	}
 	.event-date {
+		cursor: pointer;
 		display: flex;
 		flex-direction: column;
 		.location{
-		text-transform: uppercase;
-		font: 10rem BigNoodle, sans-serif;
-		letter-spacing: -8px;
-		color: @redColor;
+			text-transform: uppercase;
+			font: 10rem BigNoodle, sans-serif;
+			letter-spacing: -8px;
+			color: @redColor;
 		}
 		.dates {
 			text-transform: uppercase;
