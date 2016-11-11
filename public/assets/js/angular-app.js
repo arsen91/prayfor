@@ -23,7 +23,36 @@ angular.module('molitva', ['ngRoute'])
                 template: '<navigation></navigation><register-form></register-form>'
             })
             .when('/knowmore', {
-                template: 'Узнать больше'
+                controller: function() {
+                    $('body').scrollTop(0);
+                },
+                template: '<nav>' +
+                '<a href="#/register" class="participate nav-btn">участвовать</a>' +
+                '<div class="event-date" ng-click="$ctrl.goHome()">' + 
+                    '<span class="location">минск</span>' +
+                    '<span class="dates">20-21 января</span>' +
+                '</div>' +
+                '<a href="#/knowmore" class="know-more nav-btn">узнать больше</a>' +
+            '</nav>'+ 
+            '<section class="knowmore-content">'+
+                '<ul>' +
+                    '<li>'+
+                        '<button>о конференции</button>'+
+                    '</li>'+
+                    '<li>'+
+                        '<button>адрес проведения</button>'+
+                    '</li>'+ 
+                    '<li>'+
+                        '<button>программа</button>'+
+                    '</li>'+ 
+                    '<li>'+
+                        '<button>спикеры</button>'+
+                    '</li>'+ 
+                    '<li>'+
+                        '<button>организаторы</button>'+
+                    '</li>'+  
+                '</ul>'+
+            '</section>'
             });
     }])
     .component('index', {
