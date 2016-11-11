@@ -26,33 +26,7 @@ angular.module('molitva', ['ngRoute'])
                 controller: function() {
                     $('body').scrollTop(0);
                 },
-                template: '<nav>' +
-                '<a href="#/register" class="participate nav-btn">участвовать</a>' +
-                '<div class="event-date" ng-click="$ctrl.goHome()">' + 
-                    '<span class="location">минск</span>' +
-                    '<span class="dates">20-21 января</span>' +
-                '</div>' +
-                '<a href="#/knowmore" class="know-more nav-btn">узнать больше</a>' +
-            '</nav>'+ 
-            '<section class="knowmore-content">'+
-                '<ul>' +
-                    '<li>'+
-                        '<button>о конференции</button>'+
-                    '</li>'+
-                    '<li>'+
-                        '<button>адрес проведения</button>'+
-                    '</li>'+ 
-                    '<li>'+
-                        '<button>программа</button>'+
-                    '</li>'+ 
-                    '<li>'+
-                        '<button>спикеры</button>'+
-                    '</li>'+ 
-                    '<li>'+
-                        '<button>организаторы</button>'+
-                    '</li>'+  
-                '</ul>'+
-            '</section>'
+                template: '<navigation></navigation><know-more></know-more>'
             });
     }])
     .component('index', {
@@ -143,4 +117,90 @@ angular.module('molitva', ['ngRoute'])
                     '<button ng-disabled="registerForm.$invalid" type="submit" class="btn btn-default" ng-click="$ctrl.registerVisitor()">Регистрация</button>' +
                   '</div>' +
                 '</form></section>'
+    })
+    .component('knowMore', {
+        controller: function() {
+            $('.panel-title a').click(function(event) {
+                event.preventDefault();
+            });
+        },
+        template: 
+        '<section class="knowmore-content">'+
+            '<div class="panel-group" id="accordion">'+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#aboutConf">'+
+                            'о конференции'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="aboutConf" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#programm">'+
+                            'программа'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="programm" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#speakers">'+
+                            'спикеры'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="speakers" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#address">'+
+                            'место проведения'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="address" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#organizers">'+
+                            'организаторы'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="organizers" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+            '</div>'+
+        '</section>'
     });

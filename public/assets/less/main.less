@@ -60,7 +60,7 @@ section {
 }
 
 nav {
-	background-color: @yellowColor;
+	.nab-gradient();
 	padding: 30px 5%;
 	display: flex;
 	justify-content: space-between;
@@ -99,8 +99,31 @@ nav {
 	
 }
 .knowmore-content{
-	padding-top: 80px;
-	ul{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 40px;
+	.panel-heading{
+		background: linear-gradient(to top,@yellowColor, goldenrod);
+	}
+	.panel-title{
+		text-align: center;
+		a{
+			font: bold 3rem BigNoodle, sans-serif;
+			color: #fff;
+			cursor: pointer;
+			text-shadow: 1px 1px 1px #000;
+			text-decoration: none;
+			&:hover{
+				color: @redColor;
+			}
+		}
+	}
+}
+
+
+
+
+ul{
 		text-align: center;
 		li{
 			list-style: none;
@@ -121,4 +144,3 @@ nav {
 			}
 		}
 	}
-}
