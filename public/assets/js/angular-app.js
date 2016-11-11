@@ -14,14 +14,14 @@ angular.module('molitva', ['ngRoute'])
                         });
                 },
                 controllerAs: 'PP',
-                template: '<table class="table table-striped"><thead><tr><th>#</th><th>Имя</th><th>Церковь</th><th>Email</th></tr></thead>' +
+                template: '<div class="col-md-6 col-md-offset-3"><table class="table table-striped"><thead><tr><th>#</th><th>Имя</th><th>Церковь</th><th>Email</th></tr></thead>' +
                   '<tbody><tr ng-repeat="person in PP.people track by $index">' +
                   '<th>{{$index+1}}</th>' +
                   '<td>{{person.name}}</td>' +
                   '<td>{{person.church}}</td>' +
                   '<td>{{person.email}}</td>' +
                   '</tr></tbody>' +
-                  '</table>'
+                  '</table></div>'
             })
             .when('/register', {
                 controller: function() {
