@@ -16,7 +16,7 @@ angular.module('molitva', ['ngRoute'])
                 controllerAs: 'PP',
                 template: '<table class="table table-striped"><thead><tr><th>#</th><th>Имя</th><th>Церковь</th><th>Email</th></tr></thead>' +
                   '<tbody><tr ng-repeat="person in PP.people track by $index">' +
-                  '<th>{{$index}}</th>' +
+                  '<th>{{$index+1}}</th>' +
                   '<td>{{person.name}}</td>' +
                   '<td>{{person.church}}</td>' +
                   '<td>{{person.email}}</td>' +
