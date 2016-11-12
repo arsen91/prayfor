@@ -127,7 +127,7 @@ angular.module('molitva', ['ngRoute'])
                     '<button ng-disabled="registerForm.$invalid" type="submit" class="btn btn-default" ng-click="$ctrl.registerVisitor()">Регистрация</button>' +
                   '</div>' +
                 '</form>' +
-                '<div class="col-md-5 col-md-offset-5"><span>Уже зарегистрировано {{$ctrl.visitorCount}}</span></div></section>'
+                '<div class="col-md-5 col-md-offset-5"><span class="reg">Уже зарегистрировано {{$ctrl.visitorCount}}</span></div></section>'
     })
     .component('knowMore', {
         controller: function() {
