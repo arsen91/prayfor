@@ -120,7 +120,7 @@ angular.module('molitva', ['ngRoute'])
                       '<input ng-required="true" ng-model="$ctrl.visitor.church" type="text" class="form-control" id="church" placeholder="Церковь">' +
                   '</div>' +
                   '<div class="form-group">' +
-                    '<label for="inputEmail">Email:</label>' +
+                    '<label for="inputEmail">Email:</label><span class="not-req"> (Не обязательное поле)</span>' +
                     '<input ng-model="$ctrl.visitor.email" type="email" class="form-control" id="inputEmail" placeholder="Email">' +
                   '</div>' +
                   '<div class="form-group">' +
