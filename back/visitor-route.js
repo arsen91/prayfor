@@ -33,4 +33,10 @@ visitorRouter.route('/register')
         });
     });
 
+visitorRouter.get('/count', function(req, res) {
+    Visitor.count({}, function(err, count) {
+        res.json({success: true, count: count});
+    });
+});
+
 module.exports = visitorRouter;

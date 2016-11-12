@@ -84,6 +84,11 @@ angular.module('molitva', ['ngRoute'])
         controller: function($http, $scope) {
             var vm = this;
             vm.visitor = {};
+            $http.get('api/visitors/count')
+              .success(function(response) {
+                vm.visitorCount = response.count;
+              });
+
             vm.registerVisitor = function() {
                 $http.post('api/visitors/register', vm.visitor)
                     .success(function(response) {
@@ -104,8 +109,6 @@ angular.module('molitva', ['ngRoute'])
         },
         template: '<section class="clearfix">' +
                 '<div class="result-alert"></div>' +
-                //'<div class="col-md-4 pull-left explanation ">Дорогие братья и сестры в Мессии Иешуа, данная форма предназначена для того, чтобы мы могли ориентироваться в количестве человек. Если у вас нет электронной почты, это поле можно оставить пустым. Остальные два поля должны быть заполнены. Благорадим за ваше время!' +
-                //'</div>' +
                 '<form name="registerForm" class="col-md-6 col-md-offset-3">' +
                   '<span class="error-message" ng-if="registerForm.$invalid && registerForm.$dirty ">Введите ваше имя и название вашей церкви</span>' +
                   '<div class="form-group">' +
@@ -123,7 +126,8 @@ angular.module('molitva', ['ngRoute'])
                   '<div class="form-group">' +
                     '<button ng-disabled="registerForm.$invalid" type="submit" class="btn btn-default" ng-click="$ctrl.registerVisitor()">Регистрация</button>' +
                   '</div>' +
-                '</form></section>'
+                '</form>' +
+                '<div class="col-md-5 col-md-offset-5"><span>Уже зарегистрировано {{$ctrl.visitorCount}}</span></div></section>'
     })
     .component('knowMore', {
         controller: function() {
