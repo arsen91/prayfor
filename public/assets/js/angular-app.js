@@ -75,7 +75,7 @@ angular.module('molitva', ['ngRoute'])
                 '<a href="#/register" class="participate nav-btn">участвовать</a>' +
                 '<div class="event-date" ng-click="$ctrl.goHome()">' + 
                     '<span class="location">минск</span>' +
-                    '<span class="dates">20-21 января</span>' +
+                    '<span class="dates">27-28 января</span>' +
                 '</div>' +
                 '<a href="#/knowmore" class="know-more nav-btn">узнать больше</a>' +
             '</nav>'
