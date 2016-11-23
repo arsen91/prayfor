@@ -181,7 +181,28 @@ angular.module('molitva', ['ngRoute'])
                 '</div>'+
                 '<div id="speakers" class="panel-collapse collapse">'+
                   '<div class="panel-body">'+
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                    '<ul class="speackers-content">'+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/patlis.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name">Александр Патлис</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/old_gorelik.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name">Церковь Христианская Надежда г. Минск пастор Игорь Горёлик</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/stasilevich.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name">Николай Стасилевич Епископ Объединения ХВЕ в г. Минске и Минской области</p>'+
+                        '</li>'+
+                    '</ul>'+
                   '</div>'+
                 '</div>'+
               '</div>'+
