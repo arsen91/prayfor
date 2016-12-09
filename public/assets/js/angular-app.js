@@ -193,7 +193,7 @@ angular.module('molitva', ['ngRoute'])
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/old_gorelik.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name">Церковь Христианская Надежда г. Минск пастор Игорь Горёлик</p>'+
+                            '<p class="speacker-name">Церковь Христианская Надежда г. Минск пастор Игорь Горелик</p>'+
                         '</li>'+
 
                         '<li>'+
