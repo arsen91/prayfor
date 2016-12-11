@@ -186,21 +186,42 @@ angular.module('molitva', ['ngRoute'])
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/patlis.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name">Александр Патлис</p>'+
+                            '<p class="speacker-name"><b>Александр Патлис</b></p>'+
                         '</li>'+
 
                         '<li>'+
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/old_gorelik.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name">Церковь Христианская Надежда г. Минск пастор Игорь Горелик</p>'+
+                            '<p class="speacker-name"><b>Игорь Горелик</b> - пастор Церкви Христианская Надежда г. Минск.</p>'+
                         '</li>'+
 
                         '<li>'+
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/stasilevich.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name">Николай Стасилевич Епископ Объединения ХВЕ в г. Минске и Минской области</p>'+
+                            '<p class="speacker-name"><b>Николай Стасилевич</b> - епископ Объединения ХВЕ в г. Минске и Минской области.</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/voronenko.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Леонид Вороненко</b> - епископ Объединения общин христиан полного Евангелия в Беларуси.</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/kondrat.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Виталий Кондрат</b> - старейшина Еврейской Мессианской общины г. Минска.</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/zenkovich.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Роман Зенькович</b> - старейшина Еврейской Мессианской общины г. Минска.</p>'+
                         '</li>'+
                     '</ul>'+
                   '</div>'+
