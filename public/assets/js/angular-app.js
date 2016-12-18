@@ -231,6 +231,37 @@ angular.module('molitva', ['ngRoute'])
               '<div class="panel panel-default">'+
                 '<div class="panel-heading">'+
                   '<h4 class="panel-title">'+
+                          '<a data-toggle="collapse" data-parent="#accordion" href="#youth-speakers">'+
+                            'молодежные спикеры'+
+                          '</a>'+
+                        '</h4>'+
+                '</div>'+
+                '<div id="youth-speakers" class="panel-collapse collapse">'+
+                  '<div class="panel-body">'+
+
+                    '<ul class="speackers-content">'+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/berezkin.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Алексей Берёзкин</b> - молодёжный служитель</p>'+
+                        '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/gorelik.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Евгений Горелик</b> - молодёжный пастор</p>'+
+                        '</li>'+
+                    '</ul>'+
+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+
+              '<div class="panel panel-default">'+
+                '<div class="panel-heading">'+
+                  '<h4 class="panel-title">'+
                           '<a data-toggle="collapse" data-parent="#accordion" href="#address">'+
                             'место проведения'+
                           '</a>'+
