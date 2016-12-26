@@ -138,25 +138,32 @@ angular.module('molitva', ['ngRoute'])
         template: 
         '<section class="knowmore-content">'+
             '<div class="panel-group" id="accordion">'+
+            '<div class="event-time">'+
+              '<p><b>Время проведения:</b></p>'+
+              '<ul>'+
+                '<li>27.02 - с 18:30 до 21:30</li>'+
+                '<li>28.02 - с 10:00 до 21:00</li>'+
+              '</ul>'+
+            '</div>'+
               '<div class="panel panel-default">'+
                 '<div class="panel-heading">'+
                   '<h4 class="panel-title">'+
                           '<a data-toggle="collapse" data-parent="#accordion" href="#aboutConf">'+
-                            'о конференции'+
+                            'видение конференции'+
                           '</a>'+
                         '</h4>'+
                 '</div>'+
                 '<div id="aboutConf" class="panel-collapse collapse">'+
                   '<div class="panel-body">'+
-                    '<p class="knowmore-section-text">Шалом, Хаверим! Мир Вам, Друзья!</p>'+
-                    '<p class="knowmore-section-text">Благодарим Бога за возможность пригласить вас на молитвенную конференцию "За Пробуждение и Единство".</p>'+
+                    '<p class="knowmore-section-text">Шалом, Хаверим! Мир Вам, Друзья! Благодарим Бога за возможность пригласить вас на молитвенную конференцию "За Пробуждение и Единство".</p>'+
                     '<b>Видение:</b>'+
                     '<p class="knowmore-section-text">Мы знаем, что в это время Дух Святой побуждает многих молиться за единство, молиться за пробуждение, и за сердце Отца в нас! Каждая церковь и каждая община совершает свой вклад в Божье Царство.</p>'+
-                    '<p>И мы верим, что вместе, в ЕДИНСТВЕ (Ин.17:21-23) нам будет легче разделить сердце и боль Отца по потерянным (Ин.3:16; Лк.19:10) и Его путь благовестия (Рим.1:16), чтобы мощное излияние и действие Духа Святого (Деян.1:8, 15:16-17), несущее ПРОБУЖДЕНИЕ и "жизнь из мертвых" (Рим. 11:11-15) еще в большей полноте раскрывалось в наших церквях, общинах и в нашем городе.</p>'+
-                    '<p class="knowmore-section-text">И мы верим, что вместе, в ЕДИНСТВЕ (Ин.17:21-23) нам будет легче разделить сердце и боль Отца по потерянным (Ин.3:16; Лк.19:10) и Его путь благовестия (Рим.1:16), чтобы мощное излияние и действие Духа Святого (Деян.1:8, 15:16-17), несущее ПРОБУЖДЕНИЕ и "жизнь из мертвых" (Рим. 11:11-15) еще в большей полноте раскрывалось в наших церквях, общинах и в нашем городе.</p>'+
+                    '<p>И мы верим, что вместе, в ЕДИНСТВЕ <b>(Ин.17:21-23)</b> нам будет легче разделить сердце и боль Отца по потерянным <b>(Ин.3:16; Лк.19:10)</b> и Его путь благовестия <b>(Рим.1:16)</b>, чтобы мощное излияние и действие Духа Святого <b>(Деян.1:8, 15:16-17)</b>, несущее ПРОБУЖДЕНИЕ и "жизнь из мертвых" <b>(Рим. 11:11-15)</b> еще в большей полноте раскрывалось в наших церквях, общинах и в нашем городе.</p>'+
+                    '<p class="knowmore-section-text">И мы верим, что вместе, в ЕДИНСТВЕ <b>(Ин.17:21-23)</b> нам будет легче разделить сердце и боль Отца по потерянным <b>(Ин.3:16; Лк.19:10)</b> и Его путь благовестия <b>(Рим.1:16)</b>, чтобы мощное излияние и действие Духа Святого <b>(Деян.1:8, 15:16-17)</b>, несущее ПРОБУЖДЕНИЕ и "жизнь из мертвых" <b>(Рим. 11:11-15)</b> еще в большей полноте раскрывалось в наших церквях, общинах и в нашем городе.</p>'+
                     '<p class="knowmore-section-text">Это хорошая возможность прославить Бога, воодушевить друг друга и поделиться Божьей радостью.</p>'+
                     '<p class="knowmore-section-text">Мы чем-то можем отличаться друг от друга, но мы все Одно Тело, мы можем по разному выражать свое поклонение Богу, но у всех нас Один Господь, Одно Слово и мы все держимся на Одном корне!</p>'+
-                    '<p class="knowmore-section-text">Вместе мы можем больше!</p>'+
+                    '<hr>'+
+                    '<p><i>Вместе мы можем больше!</i></p>'+
                     '<b>С уважением организаторы молитвенной конференции за пробуждение и единство</b>'+
                   '</div>'+
                 '</div>'+
@@ -172,7 +179,12 @@ angular.module('molitva', ['ngRoute'])
                 '</div>'+
                 '<div id="programm" class="panel-collapse collapse">'+
                   '<div class="panel-body">'+
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                    '<p><b>Описание программы:</b></p>'+
+                    '<p class="knowmore-section-text">Вся программа направлена на достижение видения конференции и состоит из блоков. В каждом из них прославление и поклонение с участием команд из разных церквей, тематическое Слово и серьезная, глубокая молитва.</p>'+
+                    '<p class="knowmore-section-text">Все вместе в субботу мы отпразднуем Шабат, с еврейским прославлением и хороводами, самый первый Божий праздник, который Господь заповедал Своему народу через Моисея (Левит 23:1-3). Мы верим, Господь повел нас, после шабата сделать специальный молодежный блок, с фокусом не просто на единство среди молодежи разных церквей, но также на единство ПОКОЛЕНИЙ в поместных церквях и общинах!</p>'+
+                    '<hr>'+
+                    '<p><i>Мы верим, Бог приготовил, что-то особенное для всех нас!</i></p>'+
+                    '<p><b>С любовью, организаторы молитвенной конференции. Шалом!</b></p>'+
                   '</div>'+
                 '</div>'+
               '</div>'+
@@ -236,6 +248,13 @@ angular.module('molitva', ['ngRoute'])
                             '</div>'+
                             '<p class="speacker-name"><b>Войнилович Михаил Владимирович</b> - 1-й заместитель епископа Объединения ХВЕ в Минске и Минской области</p>'+
                         '</li>'+
+
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/vavilov.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Александр Александрович Вавилов</b> - Представитель совета церкви "Спасение" г. Светлогорск </p>'+
+                        '</li>'+
                     '</ul>'+
                   '</div>'+
                 '</div>'+
@@ -282,7 +301,9 @@ angular.module('molitva', ['ngRoute'])
                 '</div>'+
                 '<div id="address" class="panel-collapse collapse">'+
                   '<div class="panel-body">'+
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'+
+                    '<p><b>Конференция пройдет по адресу:</b></p>'+
+                    '<p>г. Минск, проспект Партизанский, 146а(здание церкви Вефиль)</p>'+
+                    '<iframe class="map-of-event"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3122.027317597624!2d27.66657809861371!3d53.86172062300236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcdf3e6bb919b%3A0xc9e4fe95f5275b47!2z0J_QsNGA0YLQuNC30LDQvdGB0LrQuNC5INC_0YDQvtGB0L8uIDE0NtCwLCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1482774281189" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'+
                   '</div>'+
                 '</div>'+
               '</div>'+
