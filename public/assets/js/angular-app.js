@@ -253,7 +253,7 @@ angular.module('molitva', ['ngRoute'])
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/vavilov.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name"><b>Александр Александрович Вавилов</b> - "церковь исцеления" председатель совета церкви г. Светлогорск </p>'+
+                            '<p class="speacker-name"><b>Александр Александрович Вавилов</b> - "Церковь Исцеления" г. Светлогорск председатель совета церкви  </p>'+
                         '</li>'+
                     '</ul>'+
                   '</div>'+
