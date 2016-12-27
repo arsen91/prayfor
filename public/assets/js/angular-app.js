@@ -232,14 +232,14 @@ angular.module('molitva', ['ngRoute'])
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/kondrat.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name"><b>Виталий Кондрат</b> - старейшина Еврейской Мессианской общины г. Минска.</p>'+
+                            '<p class="speacker-name"><b>Виталий Кондрат</b> - старейшина Еврейской Мессианской общины "Брит Хадаша" г. Минска.</p>'+
                         '</li>'+
 
                         '<li>'+
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/zenkovich.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name"><b>Роман Зенькович</b> - старейшина Еврейской Мессианской общины г. Минска.</p>'+
+                            '<p class="speacker-name"><b>Роман Зенькович</b> - старейшина Еврейской Мессианской общины "Брит Хадаша" г. Минска.</p>'+
                         '</li>'+
                         
                         '<li>'+
@@ -253,7 +253,7 @@ angular.module('molitva', ['ngRoute'])
                             '<div class="speacker-img-wrapp">'+
                                 '<img src="../images/vavilov.jpg">'+
                             '</div>'+
-                            '<p class="speacker-name"><b>Александр Александрович Вавилов</b> - Представитель совета церкви "Спасение" г. Светлогорск </p>'+
+                            '<p class="speacker-name"><b>Александр Александрович Вавилов</b> - "церковь исцеления" председатель совета церкви г. Светлогорск </p>'+
                         '</li>'+
                     '</ul>'+
                   '</div>'+
