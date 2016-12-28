@@ -141,8 +141,8 @@ angular.module('molitva', ['ngRoute'])
             '<div class="event-time">'+
               '<p><b>Время проведения:</b></p>'+
               '<ul>'+
-                '<li>27.02 - с 18:30 до 21:30</li>'+
-                '<li>28.02 - с 10:00 до 21:00</li>'+
+                '<li>27.01 - с 18:30 до 21:30</li>'+
+                '<li>28.01 - с 10:00 до 21:00</li>'+
               '</ul>'+
             '</div>'+
               '<div class="panel panel-default">'+
