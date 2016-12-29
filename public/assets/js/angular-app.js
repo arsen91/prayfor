@@ -285,6 +285,13 @@ angular.module('molitva', ['ngRoute'])
                             '</div>'+
                             '<p class="speacker-name"><b>Евгений Горелик</b> - молодёжный пастор</p>'+
                         '</li>'+
+    
+                        '<li>'+
+                            '<div class="speacker-img-wrapp">'+
+                                '<img src="../images/pavlovich.jpg">'+
+                            '</div>'+
+                            '<p class="speacker-name"><b>Андрей Павлович</b> - церковь "Иисуса Христа" г. Минск, молодёжный пастор</p>'+
+                        '</li>'+
                     '</ul>'+
 
                   '</div>'+
