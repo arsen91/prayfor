@@ -108,7 +108,7 @@ angular.module('molitva', ['ngRoute'])
             };
         },
         template: '<section class="clearfix">' +
-                '<div class="col-md-5 col-md-offset-5"><span class="reg">Регистрация бесплатная!</span></div></section>'+
+                '<div class="col-md-5 col-md-offset-5"><span class="reg">Регистрация бесплатная!</span></div>'+
                 '<div class="result-alert"></div>' +
                 '<form name="registerForm" class="col-md-6 col-md-offset-3">' +
                   '<span class="error-message" ng-if="registerForm.$invalid && registerForm.$dirty ">Введите ваше имя и название вашей церкви</span>' +
